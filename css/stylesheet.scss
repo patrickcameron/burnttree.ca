@@ -1,0 +1,464 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mobileHeader {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	background: url(../images/bellegamebackground.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	position: relative;
+	overflow: hidden;
+}
+
+.outerWrapper {
+	margin: 0 auto;
+}
+
+.contactButton {
+	background: rgba(0,0,0,0.5);
+	color: white;
+	border-radius: 20px;
+	position: fixed;
+	bottom: -15px;
+	right: 10%;
+	z-index: 999999;
+	padding: 30px 40px;
+	h3 {
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+	}
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 7.25rem;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 54px;
+	font-size: 5.4rem;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 3px;
+	color: #000000;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 100;
+	padding-bottom: 20px;
+	margin: 50px auto 50px auto;
+}
+
+h3 {
+	font-size: 35px;
+	font-size: 3.5rem;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 700;
+	text-align: left;
+	padding: 65px 0 0 0;
+	margin: 0;
+}
+
+h4 {
+	font-size: 25px;
+	font-size: 2.5rem;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+h5 {
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 10px 0 0 0;
+	text-align: left;
+	color: #000000;
+}
+
+h6 {
+	font-size: 14px;
+	font-weight: 400;
+	position: relative;
+	top: -30px;
+	text-align: left;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+a {
+	text-decoration: underline;
+	color: black;
+}
+
+a:hover {
+	background: #FFBF00;
+}
+
+span.bold {
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: black;
+	line-height: 2;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/animation.gif);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	position: relative;
+	overflow: hidden;
+}
+
+.headerNav {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0;
+	margin: 0;
+	background: rgba(0,0,0,0.7);
+	border-radius: 50%;
+	height: 380px;
+	width: 380px;
+	border: 90px solid black;
+	transition: all 1s;
+}
+
+.headerNav img {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+}
+
+.headerNavHoverEffect {
+	border: 2000px solid rgba(0,0,0,0.5);
+}
+
+.headerNavContent {
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 550px;
+	width: 400px;
+	padding: 20px;
+	transform: translate(-50%, -50%);
+	transition: 1s all;
+}
+
+.headerNavContent:hover {
+	border: 2px inset white;
+	padding-bottom: 40px;
+}
+.headerNavText {
+	display: none;
+	color: white;
+	transition: 5s all;
+	margin-top: 20px;
+	width: 390px;
+	text-align: center;
+	a {
+		color: white;
+	}
+	i {
+		font-size: 25px;
+		margin-top: 15px;
+	}
+	p {
+		font-size: 8px;
+		font-size: 0.8rem;
+	}
+}
+
+.headerNavMobile {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0;
+	margin: 0;
+	background: rgba(0,0,0,0.5);
+	border-radius: 50%;
+	height: 350px;
+	width: 350px;
+	border: 20px solid black;
+	transition: all 1s;
+}
+
+.headerNavMobile img {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 275px;
+	height: 275px;
+}
+
+
+.noUnderline:hover {
+	text-decoration: none;
+	background:none;
+}
+
+.displayInline {
+	display: inline;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+.artists {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	padding: 10px 0 10px;
+	margin: 0 auto;
+}
+
+.artists h2 {
+	color: #000000;
+	border-bottom: 3px solid rgb(239,241,105);
+}
+
+.artists p {
+	text-align: left;
+	line-height: 2.5;
+	letter-spacing: 1px;
+}
+
+.artistWrapper {
+	margin: 50px auto;
+	max-width: 900px;
+	padding-bottom: 30px;
+}
+
+.artistImage {
+	float: left;
+	max-width: 100%;
+	width: 280px;
+	margin: 30px 30px 0 30px;
+	border-radius: 50%;
+	box-shadow: 4px 3px 0px 0px rgba(217,213,217,1);
+}
+
+.artistDesription {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	// top: -40px;
+}
+
+.artistDescription iframe {
+	padding-top: 200px;
+}
+
+.consulting {
+	width: 100%;
+	background-color: white;
+	padding: 10px 0 85px;
+	margin: 0 auto;
+	color: black;
+}
+
+.consulting h2 {
+	color: black;
+	border-bottom: 3px solid rgb(249,68,0);
+	margin: 0 auto 50px auto;
+}
+
+.consulting img {
+	width: 180px;
+	padding: 20px;
+}
+
+.logoWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.consulting p {
+	max-width: 530px;
+	margin: 0 auto;
+	padding: 40px 20px 0 20px;
+	line-height: 2.5;
+	font-size: 18px;
+}
+
+.contact {
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 20px 0 50px;
+	margin: 0 auto;
+}
+
+.googlemap iframe {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.contact h2 {
+	color: #000000;
+	border-bottom: 3px solid rgb(113,201,190);
+}
+
+.contact p {
+	font-size: 15px;
+	line-height: 2;
+	margin-top: 20px;
+}
+
+.contact i {
+	margin-right: 10px;
+}
+
+footer {
+	width: 100%;
+	color: #FFFFFF;
+	background: #02111B;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+footer p {
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 2;
+}
+
+footer a {
+	color: #FFFFFF;
+}
+
+/* MEDIA CALLS */
+
+@media (max-width: 768px) {
+	.mobileHeader {
+		display: block;
+	}
+
+	header {
+		display: none;
+	}
+
+	.artistImage {
+		float: none;
+		border-radius: 0;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.artistDescription {
+		padding: 20px 0;
+	}
+
+	p {
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 2.5;
+	}
+
+	h3, h4, h5 {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 40px;
+		font-size: 4rem;
+	}
+
+	h3 {
+		padding: 20px 0 0 0;
+	}
+
+	.artistWrapper iframe {
+		top: -120px;
+		max-width: 340px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+
+/*
+animation made by Justin Aguilar
+
+www.justinaguilar.com/animations/
+
+Questions, comments, concerns, love letters:
+justin@justinaguilar.com
+==============================================
+*/
+
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
