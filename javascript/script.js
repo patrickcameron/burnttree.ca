@@ -1,7 +1,4 @@
-//add variables for the classes - eg var $headerNav = $('.headerNav');
-
 $(function() {
-	// $('header')
 	$('.headerNavContent').hover(
 
 		function () {
@@ -16,9 +13,4 @@ $(function() {
  			$('.headerNavText').removeClass('displayInline');
 		}
 	);
-
-
-	// $('.headerNav').on('transitionend', function() {
-		
-	// });
 });
