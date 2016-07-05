@@ -28,12 +28,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .contactButton {
 	background: rgba(0,0,0,0.5);
 	color: white;
-	border-radius: 20px;
+	border-radius: 4px;
 	position: fixed;
 	bottom: -15px;
-	right: 10%;
+	right: 5%;
 	z-index: 999999;
-	padding: 30px 40px;
+	padding: 20px 40px;
 	h3 {
 		margin: 0;
 		padding: 0;
@@ -240,7 +240,15 @@ header {
 	margin: 0 auto;
 }
 
-
+.sponsors {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2em 1em 0 1em;
+	img {
+		margin: 0 1em;
+	}
+}
 
 .artists {
 	background-color: #FFFFFF;
